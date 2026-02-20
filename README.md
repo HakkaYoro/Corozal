@@ -1,3 +1,3 @@
 # Corozal
 Corozal is a 1.21.11 Fabric mod that makes venezuelan food for minecraft, among other things... 
-La victoria. ESTA ES MI BRANCH DE LA COMIDA Y DE LOS PLATILLOS YA HECHOS
+La victoria.
