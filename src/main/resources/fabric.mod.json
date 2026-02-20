@@ -17,12 +17,6 @@
 	"entrypoints": {
 		"main": [
 			"corozal.Corozal"
-		],
-		"client": [
-			"corozal.CorozalClient"
-		],
-		"fabric-datagen": [
-			"corozal.CorozalDataGenerator"
 		]
 	},
 	"mixins": [],

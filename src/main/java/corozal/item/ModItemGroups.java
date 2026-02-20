@@ -20,6 +20,8 @@ public class ModItemGroups {
                     // registremos la arepa)
                     .icon(() -> new ItemStack(ModItems.AREPA != null ? ModItems.AREPA : Items.BREAD))
                     .displayItems((displayParameters, output) -> {
+                        output.accept(ModItems.AREPA);
+                        output.accept(ModItems.BOLON);
                         // Aquí vamos a iterar sobre todos los ítems propios y añadirlos a la pestaña
                     })
                     .build());

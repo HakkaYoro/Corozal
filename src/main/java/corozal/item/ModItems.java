@@ -1,29 +1,24 @@
 package corozal.item;
 
 import corozal.Corozal;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.world.item.Item;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.Identifier;
-import net.minecraft.resources.ResourceKey;
-
 import corozal.item.custom.ArepaItem;
+import corozal.item.custom.BolonItem;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.Item;
 
 public class ModItems {
-    public static final Item AREPA = registerItem("arepa", new ArepaItem(new Item.Properties()
-            .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Corozal.MOD_ID, "arepa")))));
+    public static final Item AREPA = registerItem("arepa", new ArepaItem());
+    public static final Item BOLON = registerItem("bolon", new BolonItem());
 
-    // Método auxiliar para registrar un ítem normal.
     private static Item registerItem(String name, Item item) {
-        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Corozal.MOD_ID, name), item);
+        Item itemRegister = Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Corozal.MOD_ID, name), item);
+
+        return itemRegister;
     }
 
     public static void registerModItems() {
         Corozal.LOGGER.info("Registrando Mod Items para " + Corozal.MOD_ID);
-
-        // Aquí agregaremos todos los ítems a los Item Groups nativos o personalizados
-        // más tarde.
     }
 }
