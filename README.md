@@ -1,2 +1,2 @@
 # Corozal
-mira este ponganse a trabaja
+Corozal is a 1.21.11 Fabric mod that makes venezuelan food for minecraft, among other things...
