@@ -8,12 +8,12 @@ import net.minecraft.world.item.Items;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class ModItemGroups {
 
     public static final CreativeModeTab COROZAL_GROUP = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
-            ResourceLocation.fromNamespaceAndPath(Corozal.MOD_ID, "corozal_items"),
+            Identifier.fromNamespaceAndPath(Corozal.MOD_ID, "corozal_items"),
             FabricItemGroup.builder()
                     .title(Component.translatable("itemgroup.corozal"))
                     // Usaremos la Arepa como icono (por ahora usamos un ítem genérico hasta que
