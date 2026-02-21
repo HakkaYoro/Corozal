@@ -1,0 +1,7 @@
+{
+    "parent": "block/crop",
+    "rendertype": "cutout",
+    "textures": {
+        "crop": "corozal:block/semillamaiz3"
+    }
+}

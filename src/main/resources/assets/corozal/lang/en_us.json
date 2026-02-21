@@ -1,4 +1,7 @@
 {
   "item.corozal.arepa": "Arepa",
-  "item.corozal.bolon": "Bolon"
+  "item.corozal.bolon": "Bolon",
+  "item.corozal.maiz": "Maíz",
+
+  "block.corozal.semilla_maiz": "Semilla de Maíz"
 }
